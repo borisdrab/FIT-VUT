@@ -1,0 +1,42 @@
+1) "Summary" :
+    Na základe výsledkov benchmarkov pre deväť metód (Addition, Subtraction, 
+    Multiplication, Division, SquareRoot, Power, Logarithm, SinCalculation, CosCalculation):
+
+| Method         | Mean       | Error     | StdDev    | Median     |
+|--------------- |-----------:|----------:|----------:|-----------:|
+| Addition       |  0.0053 ns | 0.0118 ns | 0.0201 ns |  0.0000 ns |
+| Subtraction    |  0.0042 ns | 0.0104 ns | 0.0087 ns |  0.0000 ns |
+| Multiplication |  0.0042 ns | 0.0058 ns | 0.0051 ns |  0.0014 ns |
+| Division       |  0.0017 ns | 0.0033 ns | 0.0029 ns |  0.0000 ns |
+| SquareRoot     |  3.7088 ns | 0.0266 ns | 0.0248 ns |  3.7037 ns |
+| Power          | 20.0587 ns | 0.0697 ns | 0.0652 ns | 20.0596 ns |
+| Logarithm      |  4.5803 ns | 0.0302 ns | 0.0267 ns |  4.5770 ns |
+| SinCalculation | 12.0540 ns | 0.0380 ns | 0.0337 ns | 12.0683 ns |
+| CosCalculation | 10.9382 ns | 0.0568 ns | 0.0504 ns | 10.9449 ns |
+
+2) "Hot spots" :
+    Addition, Subtraction, Multiplication, Division: Časy metód sú tak malé, že ich výkon je neodlíšiteľný od prázdnych metód. Extrémna efektívnosť.
+
+    SquareRoot: Metóda s ~3.71 ns/op. Výkon je stabilný, s minimálnymi odchýlkami.
+
+    Power: Najpomalšia metóda z benchmarku (~20.06 ns/op). Tento čas naznačuje potrebu optimalizácie pre exponenciálne operácie.
+
+    Sin a Cos: Výpočty trigonometrických funkcií vykazujú vyššie časy (~12.05 ns a ~10.94 ns). „Sin“ je pomalšia než „Cos“, pravdepodobne v dôsledku jej implementácie.
+
+    Logarithm: Dosiahla približne 4.58 ns/op, s minimálnymi odchýlkami.
+
+3) Návrhy na optimalizáciu :
+    Pre veľké číselné operácie:
+        Využiť predpočítané hodnoty tam, kde je to možné, aby sa 
+        minimalizovali zbytočné opakované výpočty.
+
+    Pre trigonometrické funkcie a exponenciálne výpočty:
+        Vyhodnotiť alternatívne algoritmy alebo optimalizované knižnice, ktoré využívajú 
+        SIMD (Single Instruction Multiple Data) operácie pre paralelné spracovanie dát.
+
+4) Prostredie :
+    CPU: Intel i7-6700HQ @ 2.60 GHz (8 logických jadier).
+    Framework: .NET 8.0.0.
+    Benchmark Tool: BenchmarkDotNet v0.14.0.
+    OS: macOS Monterey 12.7.6.
+

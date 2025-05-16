@@ -1,0 +1,19 @@
+
+Stanovené  termíny:
+Do 1.4. 2025 - Vytvorenie testov --- xvadova00
+Do 15.4. 2025 - Naprogramovanie matematickej knižnice --- všetci
+Do 22.4. 2025 - Vytvorenie GUI pre kalkulátor  --- xzluva01,xdrabbo00
+Do 26.4. 2025 - Dokončenie dokumentácie --- xroharo00,xvadova00
+Do 28.4. 2025 - Vytvorenie mockupu --- xdrabbo00
+Do 30.4. 2025 - Vytvorenie instalátora  --- xroharo00
+
+Komunikační kanály:
+Discord- Diskutovanie o ďaľších postupoch a radenie si
+Email - Dôležité zmeny a novinky poslané vodcom
+
+
+Zvolený systém pro správu verzí a hosting:
+Git a gitlab
+Repozitár:https://github.com/adam-zluva/ivs-2025#
+Bude udelené oprávnenie ivs.kontrola@gmail.com
+

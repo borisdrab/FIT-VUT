@@ -1,0 +1,2 @@
+Profilovanie aplikácie si vyžiadalo viac času, než sa pôvodne predpokladalo. Preto sa termín jeho dokončenia posunol.
+Rôznorodosť operačných systémov v našom tíme sťažila a predĺžila vývoj aplikácie.

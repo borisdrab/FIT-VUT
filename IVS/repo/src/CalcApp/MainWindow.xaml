@@ -1,0 +1,113 @@
+﻿<Window x:Class="CalcApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        FontSize="22"
+        PreviewKeyDown="MainWindow_KeyDown">
+    
+    <!-- Hlavne rozlozenie okna -->
+    <Grid>
+        
+        <!-- Grid obsahujuci displej a tlacidla kalkulacky -->
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            
+            <!-- Definicia riadkov -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Definicia stlpcov -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Displej kalkulacky (vstup a vystup) -->
+            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4">
+                <TextBox x:Name="Display" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" 
+                        FontSize="28" Height="50" IsReadOnly="True"
+                        VerticalAlignment="Center" Margin="0,10"/>
+            </Border>
+
+            <!-- Funkcne tlacidla -->
+            
+            <!-- Prvy riadok tlacidiel -->
+            <Button x:Name="ButtonPower" Content="^" Grid.Row="2" Grid.Column="1" Click="Operator_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonRoot" Content="√" Grid.Row="2" Grid.Column="2" Click="Root_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonFactorial" Content="!" Grid.Row="2" Grid.Column="3" Click="Factorial_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonLog" Content="log" Grid.Row="2" Grid.Column="4" Click="Log_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+
+            <!-- Druhy riadok tlacidiel -->
+            <Button x:Name="ButtonLeftParenthesis" Content="(" Grid.Row="3" Grid.Column="1" Click="Parenthesis_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonRightParenthesis" Content=")" Grid.Row="3" Grid.Column="2" Click="Parenthesis_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonMultiply" Content="*" FontSize="30" Grid.Row="3" Grid.Column="3" Click="Operator_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonDivide" Content="/" Grid.Row="3" Grid.Column="4" Click="Operator_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+
+            <!-- Treti riadok tlacidiel -->
+            <Button x:Name="Button7" Content="7" Grid.Row="4" Grid.Column="1" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="Button8" Content="8" Grid.Row="4" Grid.Column="2" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="Button9" Content="9" Grid.Row="4" Grid.Column="3" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonAdd" Content="+" FontSize="25" Grid.Row="4" Grid.Column="4" Click="Operator_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+
+            <!-- Stvrty riadok tlacidiel -->
+            <Button x:Name="Button4" Content="4" Grid.Row="5" Grid.Column="1" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="Button5" Content="5" Grid.Row="5" Grid.Column="2" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="Button6" Content="6" Grid.Row="5" Grid.Column="3" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonSubtract" Content="-" FontSize="30" Grid.Row="5" Grid.Column="4" Click="Operator_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            
+            <!-- Piaty riadok tlacidiel -->
+            <Button x:Name="Button1" Content="1" Grid.Row="6" Grid.Column="1" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="Button2" Content="2" Grid.Row="6" Grid.Column="2" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="Button3" Content="3" Grid.Row="6" Grid.Column="3" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonEquals" Content="=" FontSize="34" Grid.Row="6" Grid.Column="4" Click="Equals_Click" Grid.RowSpan="2"
+                    Background="LightBlue" BorderBrush="Black"/>
+
+            <!-- Siesty riadok tlacidiel -->
+            <Button x:Name="ButtonClear" Content="C" Grid.Row="7" Grid.Column="1" Click="Clear_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="Button0" Content="0" Grid.Row="7" Grid.Column="2" Click="Number_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            <Button x:Name="ButtonDecimal" Content="." FontSize="30" Grid.Row="7" Grid.Column="3" Click="Decimal_Click"
+                    Background="LightBlue" BorderBrush="Black"/>
+            
+        </Grid>
+        
+        <!-- Tlacidlo pre Help v pravo hore -->
+        <Button x:Name="ButtonHelp" Content="Help" FontSize="18" Width="60" Grid.Row="0" Grid.Column="4" Click="Help_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

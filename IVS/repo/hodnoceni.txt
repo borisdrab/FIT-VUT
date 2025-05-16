@@ -1,0 +1,4 @@
+xvadova00 100 (testy, dokumentace)
+xdrabbo00 100 (profiling,doxygen)
+xroharo00 100 (GUI,instalátor)
+xzluva01 100 (matematicke operace)
