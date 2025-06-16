@@ -8,7 +8,7 @@ Zadania zamerané na formálnu logiku a jej aplikácie.
 - Konverzia do normálnych foriem (CNF, DNF), formálne dôkazy  
 - Použitie SAT/SMT solverov
 
-## 🛠️ Technológie
+## 🛠️ Použité technológie
 
 - Propositional & predicate logic  
 - SAT a SMT solvery 
