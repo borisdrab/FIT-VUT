@@ -25,6 +25,6 @@ Repozitár je rozdelený do priečinkov podľa predmetov. V každom priečinku s
 
 ## ⚠️ Disclaimer
 
-Tento repozitár slúži **výhradne na študijné účely**. Nekopírujte kód a ani žiadne z jeho časti. Všetky riešenia sú moje vlastné a ich použitie môže byť považované za **plagiátorstvo** podľa pravidiel FIT VUT.
+Tento repozitár slúži **výhradne na študijné účely**. Zdržte sa kopírovania kódu alebo akejkoľvek jeho časti. Všetky riešenia sú moje vlastné a ich použitie môže byť považované za **plagiátorstvo** podľa pravidiel FIT VUT.
 
 
