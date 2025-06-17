@@ -2,13 +2,13 @@
 
 Úlohy zamerané na Python a automatizáciu.
 
-## 📌 Obsah
+## 📌 Projekty
 
 - [x] Python skripty – práca s textom, regulárne výrazy (regex)
 - [x] Dátové štruktúry, funkcie, výnimky, OOP
 - [x] Shell skripty, automatizácia, paralelizmus
 
-## 🛠️ Technológie
+## 🛠️ Použité technológie
 
 - Python 3, Bash
 - RegEx, `threading`, `asyncio`
