@@ -2,7 +2,7 @@
 
 Tento repozitár obsahuje moje vypracované projekty, domáce úlohy a zadania z rôznych predmetov štúdia na **Fakulte informačných technológií VUT v Brne (FIT VUT)**.
 
-## 🗂️ Struktúra repozitára
+## 🗂️ Štruktúra repozitára
 
 Repozitár je rozdelený do priečinkov podľa predmetov. V každom priečinku sa nachádzajú vypracované úlohy, zdrojové kódy, dokumentácia a ďalšie súvisiace súbory.
 
