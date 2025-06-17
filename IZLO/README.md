@@ -1,10 +1,10 @@
 # 🔲 IZLO – Úvod do logiky pre informatiku
 
-Zadania zamerané na formálnu logiku a jej aplikácie.
+Zadania zamerané na formálnu logiku a jej aplikáciu.
 
 ## 📌 Projekty
 
-- Syntaktický a sémantický zápis v predikatovej a propozicionálnej logike  
+- Syntaktický a sémantický zápis v predikatovej a výrokovej logike  
 - Konverzia do normálnych foriem (CNF, DNF), formálne dôkazy  
 - Použitie SAT/SMT solverov
 
